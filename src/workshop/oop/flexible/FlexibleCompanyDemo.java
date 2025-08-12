@@ -43,8 +43,10 @@ public class FlexibleCompanyDemo {
                         
    }
 
-	public static void printEmployInfo(Employee[] emps) {
-		for(Employee emp: emps) {        	
+    public static void printEmployInfo(Employee[] emps) {
+		for(Employee emp: emps) { 
+			//((Manager)emp).getDept();
+			System.out.print("관리자 부서명 = " + ((Manager)emp).getDept());
         	System.out.println(emp.getName() + "의 현재 월급은 " + emp.getSalary() + " 만원 입니다.");        	
         }
 	}
